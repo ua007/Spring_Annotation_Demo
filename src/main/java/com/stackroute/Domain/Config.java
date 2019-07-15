@@ -9,11 +9,7 @@ public class Config {
     @Bean
     public Actor actor()
     {
-        Actor actor=new Actor();
-        actor.setName("Utkarsh");
-        actor.setGender("Male");
-        actor.setAge(22);
-        return actor;
+        return new Actor("Utkarsh","Male",22);
     }
 
 //    @Bean
@@ -29,10 +25,7 @@ public class Config {
     @Bean
     public Movie movie()
     {
-        Movie movie=new Movie();
-        movie.setActor(actor());
-
-        return movie;
+        return new Movie(actor());
     }
 
 }
