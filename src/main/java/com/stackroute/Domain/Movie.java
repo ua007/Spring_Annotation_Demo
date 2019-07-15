@@ -13,6 +13,7 @@ public class Movie {
     public Movie() {
     }
 
+    @Autowired
     public Movie(Actor actor) {
         this.actor = actor;
     }

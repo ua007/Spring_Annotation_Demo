@@ -12,6 +12,18 @@ public class Config {
         return new Actor("Utkarsh","Male",22);
     }
 
+    @Bean
+    public Actor actor1()
+    {
+        return new Actor("Aditya","Male",21);
+    }
+
+    @Bean
+    public Actor actor2()
+    {
+        return new Actor("Aman","Male",23);
+    }
+
 //    @Bean
 //    public Actor actor1()
 //    {
